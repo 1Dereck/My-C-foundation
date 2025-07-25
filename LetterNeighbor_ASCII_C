@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	char l, j, k;
+	printf("Digite uma letra: ", l);
+	scanf("%c", &l);
+	j = l + 1;
+	k = l - 1;
+	printf("Antes da letra %c temos a letra %c. Depois temos a letra %c.", l, k, j); 
+	
+	return 0;
+}
