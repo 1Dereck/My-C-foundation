@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//não simplificado!!
+
+int main(int argc, char *argv[]) {
+	int n1, n2;
+	
+	printf("Qual valor do N1? ");
+	scanf("%d", &n1);
+	
+	printf("qual valor do N2? ");
+	scanf("%d", &n2);
+	
+	if (n1 > n2) {
+		printf("O N1 eh maior que o N2!!\n");
+	} else {
+		if (n1 < n2) {
+			printf("O N2 eh maior que o N1!!\n");
+		} else {
+			printf("Os dois sao iguais!!\n");
+		}
+	}
+	
+	//simplificado !!
+	
+	int n3, n4;
+	
+	printf("Qual valor do N3?? ");
+	scanf("%d", &n3);
+	
+	printf("Qual valor do N4?? ");
+	scanf("%d", &n4);
+	
+	if (n3 > n4) {
+		printf("O N3 eh maior que o N4!! ");
+	} else if (n3 < n4) {
+		printf("O N4 eh maior que o N3!! ");
+	} else if (n3 == n4) {
+		printf("O N3 e N4 sao iguais!! ");
+	}
+	return 0;
+}
