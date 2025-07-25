@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	printf("Digite 2 numeros inteiros e obtenha a soma entre eles\n");
+	
+	int A, B, X;
+	scanf("%d %d", &A, &B);
+	
+	X = A + B;
+	
+	
+	printf("X = %d\n", X);
+	return 0;
+}
