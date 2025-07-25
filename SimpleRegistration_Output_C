@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	char nome1[50], nome2[50], nome3[50];
+	char c1, c2, c3;
+	float nota1, nota2, nota3;
+	
+	printf("Cadastrando a primeira pessoa:\n");
+	fflush(stdin);
+	
+	printf("NOME: ");
+	scanf("%s", nome1);
+	printf("SEXO [M/F]: ");
+	scanf(" %c", &c1);
+	printf("NOTA: ");
+	scanf("%f", &nota1);
+	
+	printf("\n\nCadastrando a segunda pessoa: \n");
+	
+	printf("NOME: ");
+	scanf("%s", nome2);
+	printf("SEXO [M/F]: ");
+	scanf(" %c", &c2);
+	printf("NOTA: ");
+	scanf("%f", &nota2);
+	
+	printf("\n\nCadastrando a terceira pessoa:\n");
+	
+	printf("NOME: ");
+	scanf("%s", nome3);
+	printf("SEXO [M/F]: ");
+	scanf(" %c", &c3);
+	printf("NOTA: ");
+	scanf("%f", &nota3);
+	
+	printf("\n\nListragem Complesta\n");
+	
+	printf("NOME \tSEXO \tNOTA\n");
+	printf("%s \t%c \t%.1f \n", nome1, c1, nota1);
+	printf("%s \t%c \t%.1f \n", nome2, c2, nota2);
+	printf("%s \t%c \t%.1f \n", nome3, c3, nota3);
+
+	
+	
+	
+	
+	return 0;
+}
