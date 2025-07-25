@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	char nome[50];
+	float nota1, nota2, media;
+	
+	printf("Nome do aluno: ");
+	scanf("%s", nome);
+	
+	printf("Nota 1: ");
+	scanf("%f", &nota1);
+	
+	printf("Nota 2: ");
+	scanf("%f", &nota2);
+	
+	media = (nota1 + nota2) / 2; 
+	
+	printf("O aluno %s tirou as notas %.1f e %.1f e ficou com a media %.1f.", nome, nota1, nota2, media);
+	return 0;
+}
