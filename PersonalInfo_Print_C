@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+int idade = 33;
+float peso = 70.0;
+char sexo = 'M';
+char nome[] = "Dereck";
+printf("%s eh do sexo %c, tem %d anos e peso de %.1lfkg\n", nome, sexo, idade, peso);
+}
