@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	float nota1, nota2, resultado;
+	
+	printf("Digite a sua primeira nota: ");
+	scanf("%f", &nota1);
+	
+	printf("Digite a sua segunda nota: ");
+	scanf("%f", &nota2);
+	
+	resultado = (nota1 + nota2) / 2;
+	
+	if (resultado >= 7) {
+		printf("PARABENS, voce foi aprovado!!!\n");
+    } else if (resultado < 7, resultado >= 6) {
+    	printf("Voce foi aprovado");
+	} else if (resultado < 6) {
+		printf("Voce nao foi aprovado");
+	}
+	printf("\nA sua media final foi de %.1f", resultado);
+	return 0;
+}
