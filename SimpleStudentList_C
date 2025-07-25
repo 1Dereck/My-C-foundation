@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	printf("Listagem de alunos\nNome\t\tNota\n");
+	printf("Ana Beatriz\t8.5\nBianca Martins\t9.0\nClaudio sa\t5.5\nGiovana silva\t7.5\n");
+	
+	return 0;
+}
