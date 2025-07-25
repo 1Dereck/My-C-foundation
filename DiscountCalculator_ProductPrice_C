@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	char produto[50];
+	float valor, desconto, valor_final;
+	
+	printf("Produto: ");
+	scanf("%s", produto);
+	
+	printf("Preco do %s: ", produto);
+	scanf("%f", &valor);
+	
+	printf("Desconto: (%%) ");
+	scanf("%f", &desconto);
+	
+	valor_final = valor - (valor * desconto / 100);
+	
+	printf("O produto %s custava R$%.2f, mas com %.2f%% de desconto, passa a custar R$%.2f.", produto, valor, desconto, valor_final);
+	
+	return 0;
+}
