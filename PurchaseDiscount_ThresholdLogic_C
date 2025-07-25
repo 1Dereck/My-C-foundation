@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	float valGasto, desconto, result_desconto;
+	
+	printf("Qual foi o valor total das compras? R$");
+	scanf("%f", &valGasto);
+	
+	printf("Voce comprou R$%.2f na nossa loja.", valGasto);
+	
+	if (valGasto > 400) {
+		desconto = valGasto * (10.0 / 100);
+		result_desconto = valGasto - desconto;
+		
+		printf("Por fazer mais de R$%.2f em compras, voce vai receber R$ %.2f de desconto\n", valGasto, desconto);	
+		printf("O valor a ser pago eh de R$%.2f! \nVolte sempre!\n", result_desconto);
+	}	
+	return 0;
+}
